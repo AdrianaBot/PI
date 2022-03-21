@@ -1,6 +1,8 @@
-/*Ficha 1. Primeiros Programas
+//Ficha 1. Primeiros Programas
+#include <stdio.h>
+#include <math.h>
 
-1. Estado e atribuições
+/*1. Estado e atribuições
 1.1.
 
 INPUT:
@@ -144,11 +146,7 @@ OUTPUT:
         1111
 
 3.1.*/
-
-#include <stdio.h>
-
-int quadrado() {
-    int n;
+int quadrado(int n) {
     int x = scanf("%d", &n);
     if (x!=1)
         return 0;
@@ -161,7 +159,6 @@ int quadrado() {
 }
 
 //3.2.
-
 int xadrez(){
     char carater = '_';
     int n;
@@ -184,9 +181,6 @@ int xadrez(){
 }
 
 //3.3.
-
-#include <math.h>
-
 int circulo(int raio){
     int count = 0;
     for (int n = 0; n <= 2 * raio; n++) {
